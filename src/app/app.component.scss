@@ -1,0 +1,9 @@
+.container-fluid{
+    height: 100vh;
+}
+.navigation {
+    border-right: 1px solid gainsboro;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
