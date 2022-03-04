@@ -1,4 +1,6 @@
 import { Component } from '@angular/core';
+import { event } from 'jquery';
+declare var $: any;
 
 @Component({
   selector: 'app-root',
@@ -6,5 +8,11 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  title = 'portfolio';
+
+  ngOnInit() {
+    $('.box > div').click(event, function (event: any) {
+      console.log(event.target);
+      $(event.target).toggleClass('selected').siblings().toggleClass('hide');
+    })
+  }
 }

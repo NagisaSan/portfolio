@@ -1,9 +1,119 @@
-.container-fluid{
-    height: 100vh;
+.box {
+  height: 100%;
+  margin: 0;
+  overflow: hidden;
 }
-.navigation {
-    border-right: 1px solid gainsboro;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
+.box > div {
+  transition: all 0.3s;
+  float: left;
+  height: 100vh;
+  width: 20%;
 }
+.box > div:hover {
+  transform: scale(1.05);
+  cursor: pointer;
+}
+.one {
+  background-color: #ffccaa;
+}
+.two {
+  background-color: #ffffcc;
+}
+.three {
+  background-color: #aabbcc;
+}
+.four {
+  background-color: #cccccc;
+}
+.five {
+  background-color: #ff11bb;
+}
+.selected {
+  width: 100% !important;
+}
+.selected:hover {
+  transform: scale(1);
+}
+.hide {
+  width: 0 !important;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+// .container-fluid > .row { 
+//     height: 100vh;
+// }
+// .left-colum {
+//     border-right: 1px solid gainsboro;
+//     display: flex;
+//     flex-direction: column;
+//     justify-content: space-between;
+//     align-items: center;
+
+//     .vertical-bot-top {
+//         position: absolute;
+//         bottom: 50px;
+//         display: flex;
+//         transform: rotate(-90deg);
+//     }
+
+//     .vertical-top-bot {
+//         position: absolute;
+//         top: 50px;
+//         display: flex;
+//         transform: rotate(-90deg);
+//     }
+// }
+// .navigation {
+//     display: flex;
+//     justify-content: flex-end;
+    
+//     span {
+//         padding: 0 1rem;
+//     }
+// }
+
+// .panels {
+//     .row {
+//         background-color: azure;
+//         height: 25vh;
+//         border-bottom: 1px solid #e8e8e8;
+//         padding: 2rem 0;
+//     }
+    
+//     .row:last-child{
+//         border-bottom: none;
+//     }
+
+//     .panel-number {
+//         font-family: 'Titillium Web', sans-serif;
+//         font-size: 3rem;
+//         font-weight: 600;
+//         text-align: center;
+//     }
+
+//     .panel-description {
+//         font-family: 'Titillium Web', sans-serif;
+
+//         h1 {
+//             font-size: 3rem;
+//             font-weight: 600;    
+//         }
+//     }
+
+//     .panel-selection {
+//         font-size: -webkit-xxx-large;
+//         font-weight: 100;
+//         color: #3c3b3f;
+//     }
+// }
