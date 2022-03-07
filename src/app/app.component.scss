@@ -1,13 +1,14 @@
 .box {
-  height: 100%;
+  height: 20%;
+  width: 100%;
   margin: 0;
   overflow: hidden;
 }
 .box > div {
   transition: all 0.3s;
   float: left;
-  height: 100vh;
-  width: 20%;
+  height: 20vh;
+  width: 100%;
 }
 .box > div:hover {
   transform: scale(1.05);
@@ -29,13 +30,13 @@
   background-color: #ff11bb;
 }
 .selected {
-  width: 100% !important;
+  height: 100vh !important;
 }
 .selected:hover {
   transform: scale(1);
 }
 .hide {
-  width: 0 !important;
+  height: 0 !important;
 }
 
 
