@@ -11,7 +11,6 @@ export class AppComponent {
 
   ngOnInit() {
     $('.box > div').click(event, function (event: any) {
-      console.log(event.target);
       $(event.target).toggleClass('selected').siblings().toggleClass('hide');
     })
   }
