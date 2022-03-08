@@ -11,7 +11,7 @@ export class AppComponent {
 
   ngOnInit() {
     $('.toggle').click(event, function (event: any) {
-      $(event.target).parent().toggleClass('selected').siblings().toggleClass('hide')
+      $(event.target).parent().parent().toggleClass('selected').siblings().toggleClass('hide')
     })
   }
 }
