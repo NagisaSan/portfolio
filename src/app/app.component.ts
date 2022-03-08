@@ -10,8 +10,8 @@ declare var $: any;
 export class AppComponent {
 
   ngOnInit() {
-    $('.box > div').click(event, function (event: any) {
-      $(event.target).toggleClass('selected').siblings().toggleClass('hide');
+    $('.toggle').click(event, function (event: any) {
+      $(event.target).parent().toggleClass('selected').siblings().toggleClass('hide')
     })
   }
 }
