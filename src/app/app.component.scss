@@ -24,6 +24,7 @@
   cursor: pointer;
 }
 .selected {
+  overflow: scroll;
   height: 100vh !important;
 }
 .hide {
