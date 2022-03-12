@@ -4,27 +4,11 @@
   overflow: hidden;
 }
 
-.one {
-  background-color: #ffccaa;
-}
-.two {
-  background-color: #ffffcc;
-}
-.three {
-  background-color: #aabbcc;
-}
-.four {
-  background-color: #cccccc;
-}
-.five {
-  background-color: #ff11bb;
-}
-
 .toggle {
   cursor: pointer;
 }
 .selected {
-  overflow: scroll;
+  overflow-y: scroll;
   height: 100vh !important;
 }
 .hide {
@@ -32,8 +16,20 @@
 }
 
 
+/*styling*/
+.left-navigation {
+  border-right: 1px solid #eaeaea;
+}
 
+.panel:not(:last-child) {
+  border-bottom: 1px solid #eaeaea;
+}
 
+.panel-heading {
+  height: 20vh;
+  display: flex;
+  align-items: center;
+}
 
 
 
