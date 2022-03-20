@@ -1,5 +1,5 @@
 .panel {
-  height: 20vh;
+  height: 25vh;
   transition: all 0.3s;
   overflow: hidden;
 }
@@ -26,13 +26,21 @@
 }
 
 .panel-heading {
-  height: 20vh;
+  height: 25vh;
   display: flex;
   align-items: center;
 }
 
+.panel-number {
+  font-size: 40px;
+  font-weight: bolder;
+  text-align: center;
+}
 
-
+.panel-description {
+  font-size: 40px;
+  font-weight: bolder;
+}
 
 // // .container-fluid > .row { 
 // //     height: 100vh;
